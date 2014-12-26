@@ -27,6 +27,12 @@
         <script type="text/javascript">
             document.ontouchmove = function(e) {e.preventDefault()};
         </script>
+
+        <script type="text/javascript">
+   		 function didLoad() {
+      	  window.location.href="weiyou://didLoad"  // by decamincow
+  		  }
+</script>
         
         <style type="text/css">
             * {
@@ -37,7 +43,7 @@
 
 	</head>
 	
-	<body>
+	<body onLoad="didLoad()">
 		<div id="game-table">
 			<div id="game-cell">
 				<div id="viewport">
