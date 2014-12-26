@@ -2841,7 +2841,7 @@
             return "end"
         },
         create: function() {
-            window.location.href="objc://"+"gameOver:/0";
+            // window.location.href="objc://"+"gameOver:/0";
             this.view = new DisplayableContainer;
             this.background = new DisplayableImage;
             this.background.image = R.image.bg;
