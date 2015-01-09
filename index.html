@@ -17,7 +17,7 @@
                 currentGame : 'stickmanjump'
             };
         </script>
-        <script src="js/api.js"></script>
+        // <script src="js/api.js"></script>
 
 		<meta name="description" content="If you liked Doodle Jump, you'll love Stickman Jump! Play now on kik and challenge your friends for the high score. Make Stickman move from side to side by tilting your phone. The higher you jump, the better your score. Try not to fall!">
 		<link rel="kik-icon" href="promo/icon-256x256.png">
@@ -28,10 +28,45 @@
             document.ontouchmove = function(e) {e.preventDefault()};
         </script>
 
-        <script type="text/javascript">
-   		 function didLoad() {
-      	  window.location.href="weiyou://didLoad"  // by decamincow
-  		  }
+<script type="text/javascript">
+        // Weixin
+        function registerHandlerForWeixinShareContent()
+        {
+            var content = { "title": "", "description": "", "icon": "", "link": ""};
+            var json = JSON.stringify(content);
+            return json;
+        }
+        // Weibo
+        function registerHandlerForSinaWeiboContent()
+        {
+            var content = { "description": "", "icon": "", "link": ""};
+            var json = JSON.stringify(content);
+            return json;
+        }
+        // Facebook
+        function registerHandlerForFacebookShareContent()
+        {
+            var content = { "description": "", "icon": "", "link": ""};
+            var json = JSON.stringify(content);
+            return json;
+        }
+        // Twitter
+        function registerHandlerForTwitterShareContent()
+        {
+            var content = { "description": "", "icon": "", "link": ""};
+            var json = JSON.stringify(content);
+            return json;
+        }
+    </script>
+    <script type="text/javascript">
+
+    function didLoad() {
+                        if(navigator.userAgent.indexOf("WeGame/0.2.0") !=-1)
+            {
+                window.location.href="weiyou://didLoad/regWeixin/registerHandlerForWeixinShareContent/regSinaWeibo/registerHandlerForSinaWeiboContent/regFacebook/registerHandlerForFacebookShareContent/regTwitter/registerHandlerForTwitterShareContent"  // by decamincow
+            }
+
+          }
 </script>
         
         <style type="text/css">
@@ -51,7 +86,7 @@
 				</div>
 			</div>
 		</div>
-		
+<!-- 		
 		<div id="ad-overlay">
 			<div id="ad-table">
 				<div id="ad-cell">
@@ -61,6 +96,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</body>
 </html>
