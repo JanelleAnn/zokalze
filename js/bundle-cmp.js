@@ -2820,8 +2820,8 @@
                 });
                 this.sagaButton.x = P.width - this.sagaButton.width - 20;
                 this.sagaButton.y = P.height - this.sagaButton.height - 20;
-                this.view.addChild(this.sagaButton);
-                this.addArea(this.sagaButton)
+                //this.view.addChild(this.sagaButton);
+                //this.addArea(this.sagaButton)
             }
         },
         play: function() {
@@ -4215,7 +4215,7 @@
                 a = s.createElement(o), m = s.getElementsByTagName(o)[0];
                 a.async = 1;
                 a.src = g;
-                m.parentNode.insertBefore(a, m)
+                //m.parentNode.insertBefore(a, m)
             })(window, document, "script", "http://www.google-analytics.com/analytics.js", "ga")
         } else if (!window.cordova) {
             var interfaceReady = false;
@@ -4272,7 +4272,7 @@
             s.type = "text/javascript";
             s.async = true;
             s.src = d + "/client/gmga.js";
-            p.parentNode.insertBefore(s, p)
+            //p.parentNode.insertBefore(s, p)
         })(window, document, "script", "http://gmga.gamemix.com", "gmga");
         gmga("stickmanjump")
     })();
@@ -4330,7 +4330,7 @@
         s.type = "text/javascript";
         s.async = true;
         s.src = p + "/v1/gm.js";
-        d.parentNode.insertBefore(s, d)
+        //d.parentNode.insertBefore(s, d) //decamincow
     })(window, document, "script", "http://gmapi.gamemix.com", "gmapi");
     gmapi("stickmanjump");
     (function() {
